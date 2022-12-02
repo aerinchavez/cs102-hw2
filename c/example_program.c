@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MYSTRING "Hello, World!\n"
+#define MYSTRING "Hello, Aerin!\n"
 
 int main(void) {
 	printf(MYSTRING);
