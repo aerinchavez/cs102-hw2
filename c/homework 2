@@ -1,0 +1,98 @@
+int main(void) {
+#include <stdio.h>
+#include <string.h>
+ 
+char words1[100];
+char words2[100];
+char words3[100];
+char words4[100];
+char words5[100];
+char words6[100];
+
+int a, count1 = 1;
+int b, count2 = 1;
+int c, count3 = 1;
+int d, count4 = 1;
+
+int h = 5;
+  if (h == 5);
+
+  /*This is asking the user to enter eac sentence individually*/
+
+  printf("Enter your first sentence: ");
+  fgets(words1, sizeof (words1), stdin);
+
+{
+   for (a = 0;words1[a] != '\0';a++)
+        {
+            if (words1[a] == ' ' && words1[a+1] != ' ')
+                count1++;    
+        }
+   printf("The number of words in your first sentence is: %d\n", count1);
+ 
+ printf("Enter your second sentence: ");
+  fgets(words2, sizeof (words2), stdin);
+ 
+   for (b = 0;words2[b] != '\0';b++)
+        {
+            if (words2[b] == ' ' && words2[b+1] != ' ')
+                count2++;    
+        }
+   printf("The number of words in your second sentence is: %d\n", count2);
+ 
+   printf("Enter your third sentence: ");
+  fgets(words3, sizeof (words3), stdin);
+ 
+   for (c = 0;words3[c] != '\0';c++)
+        {
+            if (words3[c] == ' ' && words3[c+1] != ' ')
+                count3++;    
+        }
+   printf("The number of words in your third sentence is: %d\n", count3);
+ 
+printf("Enter your fourth sentence: ");
+  fgets(words4, sizeof (words4), stdin);
+ 
+   for (c = 0;words4[d] != '\0';d++)
+        {
+            if (words4[d] == ' ' && words4[d+1] != ' ')
+                count4++;    
+        }
+   printf("The number of words in your third sentence is: %d\n", count4);
+ 
+   int g = count1 + count2 + count3 + count4;
+    printf(g);
+ 
+   printf("Your total number of words is: " "%d",g);
+ 
+   printf("The number of words in your first sentence is: %d\n", count1);
+
+   /* This is trying to find the most frequently used word in the lines*/
+   int m,j;
+   int maxCount = 0;
+   char mostfrequent;
+   int count5=0;
+   
+   for(m=0;m<strlen(h);m++){
+    for(j=0;j<strlen(words1);j++){
+        if(words1[m]==words1[j]){
+            count5++;
+        }
+    
+    if(maxCount<count5){
+        maxCount=count5;
+        mostfrequent=words1[m];
+    }
+   
+   printf("The most frequen word %c, as been repeated %d times", mostfrequent, maxCount);
+    }
+   }
+
+	/*This is trying to calculate the average number of words per line*/
+   int q = count1 + count2 + count3 / 3
+
+   printf("the average number of words per line is: %d", "%d", q);
+}
+    /* exit from program to shell with integer code EXIT_SUCCESS = 0 */ 
+    return(EXIT_SUCCESS);
+}
